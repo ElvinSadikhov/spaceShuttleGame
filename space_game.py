@@ -1,3 +1,5 @@
+"""In order to run the program, you should put all png and mp3 files(NOT PY FILE) into the folder (named "files") in the same directory with python file(look at lines 13-14,36-37)"""
+
 import pygame
 import os
 pygame.font.init()  # fonts
@@ -112,8 +114,8 @@ def winner(text):
 
 
 def main():
-    red = pygame.Rect(100, 100, SHUTTLE_WIDTH, SHUTTLE_HEIGHT)
-    yellow = pygame.Rect(800, 100, SHUTTLE_WIDTH, SHUTTLE_HEIGHT)
+    red = pygame.Rect(100, 100,SHUTTLE_HEIGHT, SHUTTLE_WIDTH)
+    yellow = pygame.Rect(800, 100, SHUTTLE_HEIGHT, SHUTTLE_WIDTH)
 
     red_bullets = []
     yellow_bullets = []
